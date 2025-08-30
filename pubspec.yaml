@@ -1,0 +1,86 @@
+name: e_commerce_app
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+#----------------- Utility packages --------------#
+  http: ^1.5.0
+  intl: ^0.20.2
+  logger: ^2.6.1
+  url_launcher: ^6.3.2
+  flutter_native_splash: ^2.4.6
+
+  #--------------- state management --------------#
+  get: ^4.7.2
+  get_storage: ^2.1.1
+
+  #--------------- Icons --------------#
+  iconsax: ^0.0.8
+  cupertino_icons: ^1.0.8
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+flutter:
+
+  uses-material-design: true
+
+  #--------------- local assets --------------#
+
+  assets:
+    - assets/icons/brands/
+    - assets/images/
+    - assets/logo/
+
+  #--------------- local assets --------------#
+
+  # fonts:
+  #   -family: Poppins
+  #   fonts:
+  #     -asset: assets\fonts\Poppins-Black.ttf
+  #     -asset: assets\fonts\Poppins-Bold.ttf
+  #     -asset: assets\fonts\Poppins-ExtraBold.ttf
+  #     -asset: assets\fonts\Poppins-Thin.ttf
+  #     -asset: assets\fonts\Poppins-Light.ttf
+  #     -asset: assets\fonts\Poppins-Medium.ttf
+  #     -asset: assets\fonts\Poppins-Regular.ttf
+  #     -asset: assets\fonts\Poppins-SemiiBold.ttf
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
