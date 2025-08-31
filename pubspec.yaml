@@ -17,6 +17,7 @@ dependencies:
   logger: ^2.6.1
   url_launcher: ^6.3.2
   flutter_native_splash: ^2.4.6
+  smooth_page_indicator: ^1.2.1
 
   #--------------- state management --------------#
   get: ^4.7.2
@@ -39,9 +40,9 @@ flutter:
   #--------------- local assets --------------#
 
   assets:
-    - assets/icons/brands/
-    - assets/images/
-    - assets/logo/
+    - assets/icons/
+    - assets/images/animations/
+    - assets/logos/
 
   #--------------- local assets --------------#
 
