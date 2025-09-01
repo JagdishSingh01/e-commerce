@@ -28,7 +28,7 @@ class TAppTheme {
 
   static ThemeData darkTheme = ThemeData(
     fontFamily: 'Poppins',
-    brightness: Brightness.light,
+    brightness: Brightness.dark,
     primaryColor: Colors.blue,
     scaffoldBackgroundColor: Colors.black,
     textTheme: TTextTheme.darkTextTheme,
