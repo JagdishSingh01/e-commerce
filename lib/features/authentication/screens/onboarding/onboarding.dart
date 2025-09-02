@@ -26,18 +26,18 @@ class OnBoardingScreen extends StatelessWidget {
             children: [
               OnBoardingPage(
                 image: TImages.onBoardingImage1,
-                title: TTexts.onBoardingTitle1,
-                subTitle: TTexts.onBoardingSubTitle1,
+                title: TTexts.tOnBoardingTitle1,
+                subTitle: TTexts.tOnBoardingSubTitle1,
               ),
               OnBoardingPage(
                 image: TImages.onBoardingImage2,
-                title: TTexts.onBoardingTitle2,
-                subTitle: TTexts.onBoardingSubTitle2,
+                title: TTexts.tOnBoardingTitle2,
+                subTitle: TTexts.tOnBoardingSubTitle2,
               ),
               OnBoardingPage(
                 image: TImages.onBoardingImage3,
-                title: TTexts.onBoardingTitle3,
-                subTitle: TTexts.onBoardingSubTitle3,
+                title: TTexts.tOnBoardingTitle3,
+                subTitle: TTexts.tOnBoardingSubTitle3,
               ),
             ],
           ),
