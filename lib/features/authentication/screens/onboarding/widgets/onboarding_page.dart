@@ -18,13 +18,13 @@ class OnBoardingPage extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-  width: THelperFunctions.screenWidth() * 0.8,
-  height: THelperFunctions.screenHeight() * 0.6,
-  child: Image.asset(
-    image,
-    fit: BoxFit.contain, // Try cover, fill, or scaleDown if needed
-  ),
-),
+            width: THelperFunctions.screenWidth() * 0.8, 
+            height: THelperFunctions.screenHeight() * 0.6,
+            child: Image.asset(
+              image,
+              fit: BoxFit.contain, // Try cover, fill, or scaleDown if needed
+            ),
+          ),
 
           Text(
             title,

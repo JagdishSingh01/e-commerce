@@ -84,7 +84,7 @@ class TTexts {
   static const String confirmEmailSubTitle = "Congratulations! Your Account Awaits: Verify Your Email to Start Shopping and Experience a World of Unrivaled Deals and Personalized Offers.";
   static const String resendEmail = "Resend Email";
   static const String yourAccountCreatedTitle = "Your account successfully created!";
-  static const String yourAccountCreatedSubTitle = "Welcome to Your Application: Your Account is Created, Unleash the Joy of Seamless Online Experience!";
+  static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Experience!";
 
 
   // -- Forget Password Text

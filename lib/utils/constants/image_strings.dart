@@ -12,8 +12,8 @@ class TImages {
   static const String defaultVariationImageIcon = "assets/images/content/tiny-man-maintaining-a-work-life-balance.png";
 
   // -- Social Logos
-  static const String google = "assets/logos/google-icon.png";
-  static const String facebook = "assets/logos/facebook-icon.png";
+  static const String google = "assets/logos/google-logo.png";
+  static const String facebook = "assets/logos/facebook-logo.png";
 
   // -- Category Icons
   static const String sportIcon = "assets/icons/categories/icons8-bowling-64.png";
@@ -76,6 +76,10 @@ class TImages {
   static const String onBoardingImage1 = "assets/images/animations/searching.gif";
   static const String onBoardingImage2 = "assets/images/animations/shopping.gif";
   static const String onBoardingImage3 = "assets/images/animations/delivery.gif";
+
+  //signup
+  static const String emailVerification = "assets/images/animations/verify_email.gif";
+  static const String accountCreated = "assets/images/animations/account_created_successfully.gif";
 
   // -- Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";

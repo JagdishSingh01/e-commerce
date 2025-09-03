@@ -1,8 +1,11 @@
+import 'package:e_commerce_app/features/authentication/screens/signUp/verify_email.dart';
 import 'package:e_commerce_app/features/authentication/screens/signUp/widgets/terms_conditions_checkbox.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignUpForm extends StatelessWidget {
@@ -110,7 +113,7 @@ class TSignUpForm extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(VerifyEmailScreen()),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: TColors.primary,
                     foregroundColor: TColors.light,
