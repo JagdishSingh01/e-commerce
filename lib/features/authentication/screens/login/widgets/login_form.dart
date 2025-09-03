@@ -1,8 +1,11 @@
+import 'package:e_commerce_app/features/authentication/screens/signUp/signup.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {
@@ -47,7 +50,7 @@ class TLoginForm extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Checkbox(value: true, onChanged: (value) {}),
+                    SizedBox(height: 24, width: 24, child: Checkbox(value: true, onChanged: (value) {})),
                     Text(TTexts.tRememberMe),
                   ],
                 ),
@@ -71,6 +74,7 @@ class TLoginForm extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: TColors.primary,
                   foregroundColor: TColors.light,
+                  side: BorderSide.none
                 ),
                 child: Text('Sign In'),
               ),
@@ -87,7 +91,7 @@ class TLoginForm extends StatelessWidget {
                   ),
                   foregroundColor: dark ? TColors.light : TColors.dark,
                 ),
-                onPressed: () {},
+                onPressed: () => Get.to(SignUpScreen()),
                 child: Text('Create Account'),
               ),
             ),
