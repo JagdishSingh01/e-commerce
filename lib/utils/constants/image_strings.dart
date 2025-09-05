@@ -80,6 +80,7 @@ class TImages {
   //signup
   static const String emailVerification = "assets/images/animations/verify_email.gif";
   static const String accountCreated = "assets/images/animations/account_created_successfully.gif";
+  
 
   // -- Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";

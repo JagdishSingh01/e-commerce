@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:e_commerce_app/features/authentication/screens/signUp/signup.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
@@ -5,7 +6,6 @@ import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {
@@ -24,7 +24,7 @@ class TLoginForm extends StatelessWidget {
               // controller: TextEditingController(),
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.direct_right),
-                labelText: 'Email',
+                labelText: 'E-mail',
                 floatingLabelStyle: TextStyle(
                   color: dark ? TColors.grey : TColors.dark,
                 ),
@@ -57,7 +57,7 @@ class TLoginForm extends StatelessWidget {
 
                 //forgot password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(ForgetPassword()),
                   child: Text(
                     TTexts.tForgotPassword,
                     style: TextStyle(color: TColors.darkGrey),
