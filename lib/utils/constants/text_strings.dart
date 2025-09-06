@@ -25,7 +25,7 @@ class TTexts {
   static const String tFullName = "Full Name";
   static const String tGetStarted = "Get Started";
   static const String tForgetPassword = "Forget Password?";
-  static const String homeAppbarSubTitle = "Coding With T";
+  static const String homeAppbarSubTitle = "Coding With Jagdish";
   static const String tSignInWithGoogle = "Sign-In with Google";
 
   // -- Validation --
@@ -189,4 +189,5 @@ class TTexts {
   // -- Dashboard 1
   static const String popularProducts = "Popular Products";
   static const String homeAppbarTitle = "Good day for shopping";
+
 }
