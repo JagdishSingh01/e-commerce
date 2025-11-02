@@ -9,7 +9,8 @@ import 'package:e_commerce_app/utils/theme/custom_thems/chip_theme.dart';
 import 'package:e_commerce_app/utils/theme/custom_thems/bottom_sheet_theme.dart';
 
 class TAppTheme {
-  TAppTheme._();
+  TAppTheme._();// private constructor — prevents instantiation
+
 
   static ThemeData lightTheme = ThemeData(
     fontFamily: 'Poppins',
