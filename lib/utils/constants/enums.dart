@@ -1,4 +1,4 @@
-enum TextStyleEnum {
+enum TextSizes {
   small, 
   medium,
   large

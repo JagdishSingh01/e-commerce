@@ -21,7 +21,7 @@ class ResetPassword extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () => Get.off(() => LoginScreen()),
-            icon: Icon(CupertinoIcons.clear), 
+            icon: Icon(CupertinoIcons.clear),
           ),
         ],
       ),
@@ -32,14 +32,15 @@ class ResetPassword extends StatelessWidget {
             children: [
               /// Image
               SizedBox(
-                width: THelperFunctions.screenWidth() * 0.8, 
+                width: THelperFunctions.screenWidth() * 0.8,
                 height: THelperFunctions.screenHeight() * 0.35,
                 child: Image.asset(
                   TImages.deliveredEmailIllustration,
-                  fit: BoxFit.contain, // Try cover, fill, or scaleDown if needed
+                  fit:
+                      BoxFit.contain, // Try cover, fill, or scaleDown if needed
                 ),
               ),
-              SizedBox(height: TSizes.spaceBtwSections*1.5),
+              SizedBox(height: TSizes.spaceBtwSections * 1.5),
 
               /// Title and subtitle
               Text(
@@ -62,41 +63,42 @@ class ResetPassword extends StatelessWidget {
 
               /// Buttons
               SizedBox(height: TSizes.spaceBtwSections),
-            // sign in button
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () => Get.to(() =>
-                  SuccessScreen(
-                    image: TImages.accountCreated,
-                    title: TTexts.yourAccountCreatedTitle,
-                    subTitle: TTexts.yourAccountCreatedSubTitle,
-                    onPressed: () => Get.offAll(LoginScreen()),
-                  )
+              // sign in button
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed:
+                      () => Get.to(
+                        () => SuccessScreen(
+                          image: TImages.accountCreated,
+                          title: TTexts.yourAccountCreatedTitle,
+                          subTitle: TTexts.yourAccountCreatedSubTitle,
+                          onPressed: () => Get.offAll(LoginScreen()),
+                        ),
+                      ),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: TColors.primary,
+                    foregroundColor: TColors.light,
+                    side: BorderSide.none,
+                  ),
+                  child: Text("Done"),
                 ),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: TColors.primary,
-                  foregroundColor: TColors.light,
-                  side: BorderSide.none
-                ),
-                child: Text("Done"),
               ),
-            ),
-            SizedBox(height: TSizes.spaceBtwItems),
+              SizedBox(height: TSizes.spaceBtwItems),
 
-            // create account button
-            SizedBox(
-              width: double.infinity,
-              child: TextButton(
-                onPressed: (){}, 
-                child: Text(
-                  TTexts.resendEmail, 
-                  style: TextStyle(
-                    color: dark ? TColors.light : TColors.black
+              // create account button
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    TTexts.resendEmail,
+                    style: TextStyle(
+                      color: dark ? TColors.light : TColors.black,
+                    ),
                   ),
                 ),
               ),
-            ),
             ],
           ),
         ),

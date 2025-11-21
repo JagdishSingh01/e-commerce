@@ -16,7 +16,7 @@ class TPromoSlider extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(HomeController());
     return Padding(
-      padding: const EdgeInsets.all(TSizes.defaultSpace),
+      padding: EdgeInsets.zero,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

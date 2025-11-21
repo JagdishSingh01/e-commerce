@@ -21,7 +21,7 @@ class TVerticalImageText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
-
+ 
     return Padding(
       padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
       child: Column(

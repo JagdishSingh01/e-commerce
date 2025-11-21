@@ -51,7 +51,11 @@ class TLoginForm extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    SizedBox(height: 24, width: 24, child: Checkbox(value: true, onChanged: (value) {})),
+                    SizedBox(
+                      height: 24,
+                      width: 24,
+                      child: Checkbox(value: true, onChanged: (value) {}),
+                    ),
                     Text(TTexts.tRememberMe),
                   ],
                 ),
@@ -75,7 +79,7 @@ class TLoginForm extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: TColors.primary,
                   foregroundColor: TColors.light,
-                  side: BorderSide.none
+                  side: BorderSide.none,
                 ),
                 child: Text('Sign In'),
               ),

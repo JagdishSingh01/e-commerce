@@ -30,7 +30,7 @@ class ForgetPassword extends StatelessWidget {
               TTexts.tForgetPasswordSubTitle,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
-            SizedBox(height: TSizes.spaceBtwItems*3),
+            SizedBox(height: TSizes.spaceBtwItems * 3),
 
             TextFormField(
               // controller: TextEditingController(),
@@ -52,7 +52,7 @@ class ForgetPassword extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: TColors.primary,
                   foregroundColor: TColors.light,
-                  side: BorderSide.none
+                  side: BorderSide.none,
                 ),
                 child: Text('Submit'),
               ),

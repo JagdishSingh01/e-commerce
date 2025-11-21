@@ -7,9 +7,8 @@ import '../../constants/sizes.dart';
 class TElevatedButtonTheme {
   TElevatedButtonTheme._(); //To avoid creating instances
 
-
   /* -- Light Theme -- */
-  static final lightElevatedButtonTheme  = ElevatedButtonThemeData(
+  static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: TColors.white,
@@ -18,7 +17,9 @@ class TElevatedButtonTheme {
       disabledBackgroundColor: TColors.grey,
       side: const BorderSide(color: TColors.dark),
       padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.borderRadiusLg)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(TSizes.borderRadiusLg),
+      ),
     ),
   );
 
@@ -32,7 +33,9 @@ class TElevatedButtonTheme {
       disabledBackgroundColor: TColors.grey,
       side: const BorderSide(color: TColors.primary),
       padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.borderRadiusLg)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(TSizes.borderRadiusLg),
+      ),
     ),
   );
 }

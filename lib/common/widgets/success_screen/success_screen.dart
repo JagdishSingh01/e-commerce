@@ -4,7 +4,6 @@ import 'package:e_commerce_app/utils/constants/text_strings.dart';
 import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
-
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
     super.key,
