@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 
 class TSettingsMenuTile extends StatelessWidget {
-  TSettingsMenuTile({
+  const TSettingsMenuTile({
     super.key,
     required this.icon,
     required this.title,
@@ -14,8 +14,7 @@ class TSettingsMenuTile extends StatelessWidget {
   });
 
   final IconData icon;
-  String title;
-  String subTitle;
+  final String title, subTitle;
   final Widget? trailing;
   final VoidCallback? onTap;
   @override

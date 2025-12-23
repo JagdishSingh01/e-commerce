@@ -6,8 +6,9 @@ import 'package:iconsax/iconsax.dart';
 
 class TUserProfile extends StatelessWidget {
   const TUserProfile({
-    super.key,
+    super.key, this.onPressed,
   });
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class TUserProfile extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white),),
       subtitle: Text("majorhamr@gmail.com",
             style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),),
-      trailing: IconButton(onPressed: (){}, icon: Icon(Iconsax.edit,color: TColors.white)),
+      trailing: IconButton(onPressed: onPressed, icon: Icon(Iconsax.edit,color: TColors.white)),
     );
   }
 }
