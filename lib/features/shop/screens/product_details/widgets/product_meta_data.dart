@@ -11,7 +11,7 @@ import 'package:e_commerce_app/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TProductMetaData extends StatelessWidget {
-  const TProductMetaData({super.key});
+  const  TProductMetaData({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,9 +59,9 @@ class TProductMetaData extends StatelessWidget {
         /// Status Stock
         Row(
           children: [
-            const TProductTitleText(title: 'Status'),
-            const SizedBox(height: TSizes.spaceBtwItems),
-            Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
+            const TProductTitleText(title: 'Stock'),
+            const SizedBox(width: TSizes.spaceBtwItems),
+            Text('In Stock', style: Theme.of(context).textTheme.titleMedium!.copyWith(fontWeight: FontWeight.bold)),
           ],
         ),
         const SizedBox(height: TSizes.spaceBtwItems / 1.5),

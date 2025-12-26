@@ -5,14 +5,15 @@ class TProductPriceText extends StatelessWidget {
     super.key,
     this.currencySign = '\$',
     required this.price,
-    this.maxLines=1,
-    this.isLarge= false,
+    this.maxLines = 1,
+    this.isLarge = false,
     this.lineThrough = false,
+    this.bold = false,
   });
   final String currencySign, price;
   final int maxLines;
   final bool isLarge;
-  final bool lineThrough;
+  final bool lineThrough, bold;
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +21,15 @@ class TProductPriceText extends StatelessWidget {
       currencySign + price,
       maxLines: maxLines,
       overflow: TextOverflow.ellipsis,
-      style: isLarge
-          ? Theme.of(context).textTheme.headlineMedium!.apply(
-                decoration:
-                    lineThrough ? TextDecoration.lineThrough : null,
+      style:
+          isLarge
+              ? Theme.of(context).textTheme.headlineMedium!.copyWith(
+                decoration: lineThrough ? TextDecoration.lineThrough : null,
+                fontWeight: bold ? FontWeight.bold : null,
               )
-          : Theme.of(context).textTheme.titleMedium!.apply(
-                decoration:
-                    lineThrough ? TextDecoration.lineThrough : null,
+              : Theme.of(context).textTheme.titleMedium!.copyWith(
+                decoration: lineThrough ? TextDecoration.lineThrough : null,
+                fontWeight: bold ? FontWeight.bold : null,
               ),
     );
   }

@@ -1,12 +1,13 @@
+import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/text_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/elevated_button_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/appbar_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/outlined_button_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/text_field_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/checkbox_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/chip_theme.dart';
-import 'package:e_commerce_app/utils/theme/custom_thems/bottom_sheet_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/text_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/elevated_button_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/outlined_button_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/text_field_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/checkbox_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/chip_theme.dart';
+import 'package:e_commerce_app/utils/theme/custom_themes/bottom_sheet_theme.dart';
 
 class TAppTheme {
   TAppTheme._();// private constructor — prevents instantiation
@@ -15,8 +16,8 @@ class TAppTheme {
   static ThemeData lightTheme = ThemeData(
     fontFamily: 'Poppins',
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.white,
+    primaryColor: TColors.primary,
+    scaffoldBackgroundColor: TColors.white,
     textTheme: TTextTheme.lightTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
@@ -30,8 +31,9 @@ class TAppTheme {
   static ThemeData darkTheme = ThemeData(
     fontFamily: 'Poppins',
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
-    scaffoldBackgroundColor: Colors.black,
+    disabledColor: TColors.grey,
+    primaryColor: TColors.primary,
+    scaffoldBackgroundColor: TColors.black,
     textTheme: TTextTheme.darkTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
     appBarTheme: TAppBarTheme.darkAppBarTheme,
