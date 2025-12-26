@@ -180,6 +180,12 @@ class TImages {
   static const String banner7 = "assets/images/banners/banner_7.jpg";
   static const String banner8 = "assets/images/banners/banner_8.jpg";
 
+  // -- Product reviewer
+  static const String productReviewer1 = "assets/images/reviews/reviewer1.jpg";
+  static const String productReviewer2 = "assets/images/reviews/reviewer2.jpg";
+  static const String productReviewer3 = "assets/images/reviews/reviewer3.jpg";
+  static const String productReviewer4 = "assets/images/reviews/reviewer4.jpg";
+  static const String productReviewer5 = "assets/images/reviews/reviewer5.jpg";
 
   //Profile
   static const String userProfile = "assets/images/content/user.png";
@@ -194,5 +200,6 @@ class TImages {
   static const String paystack = "assets/icons/payment_methods/paystack.png";
   static const String paytm = "assets/icons/payment_methods/paytm.png";
   static const String successfulPaymentIcon = "assets/icons/payment_methods/successful_payment_icon.png";
+
 }
 
