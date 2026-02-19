@@ -13,14 +13,11 @@ class SuccessScreen extends StatelessWidget {
     required this.onPressed,
   });
 
-  final String image;
-  final String title;
-  final String subTitle;
+  final String image, title, subTitle;
   final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
-    // final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(

@@ -56,6 +56,7 @@ flutter:
     - assets/images/products/
     - assets/images/reviews/
     - assets/logos/
+    - assets/icons/payment_methods/
 
   #--------------- local assets --------------#
 
