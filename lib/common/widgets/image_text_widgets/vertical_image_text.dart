@@ -26,23 +26,26 @@ class TVerticalImageText extends StatelessWidget {
       padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
       child: Column(
         children: [
-          Container(
-            width: 56,
-            height: 56,
-            padding: EdgeInsets.all(TSizes.sm),
-            decoration: BoxDecoration(
-              color: backgroundColor ?? (dark
-                  ? TColors.black
-                  : TColors.white),
-              shape: BoxShape.circle,
-            ),
-            child: Center(
-              child: Image(
-                image: AssetImage(image), 
-                fit: BoxFit.cover,
-                color: dark
-                    ? TColors.light
-                    : TColors.dark,
+          GestureDetector(
+            onTap: onTap,
+            child: Container(
+              width: 56,
+              height: 56,
+              padding: EdgeInsets.all(TSizes.sm),
+              decoration: BoxDecoration(
+                color: backgroundColor ?? (dark
+                    ? TColors.black
+                    : TColors.white),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Image(
+                  image: AssetImage(image), 
+                  fit: BoxFit.cover,
+                  color: dark
+                      ? TColors.light
+                      : TColors.dark,
+                ),
               ),
             ),
           ),
